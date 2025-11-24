@@ -22,30 +22,64 @@ body {
 header {
     margin-top: 0.35rem;
     margin-bottom: 1rem;
-    border-bottom: 3px solid #333333;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 140px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center top;
+    border: 2px solid #333333;
+}
+
+.header-text {
+    flex: 1;
 }
 
 h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: #333333;
-    text-align: center;
-    margin-bottom: 0.5rem;
+    text-align: left;
+    margin-bottom: 0.1rem;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.job-title {
+    font-size: 1rem;
+    color: #2c7e7f;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
 }
 
 .contact-info {
-    text-align: center;
+    text-align: left;
     font-size: 0.85rem;
     color: #666666;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.3rem 2rem;
+    align-items: start;
 }
 
-.contact-info span {
-    margin: 0 0.5rem;
-    display: inline-flex;
+.contact-info div {
+    display: flex;
     align-items: center;
-    gap: 0.3rem;
+    gap: 0.5rem;
 }
 
 .contact-info i {
@@ -208,6 +242,16 @@ h3 {
         max-width: 100%;
     }
 
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 140px;
+    }
+
     .project h3 {
         flex-direction: column;
     }
@@ -216,69 +260,125 @@ h3 {
         flex-direction: column;
     }
 
-    .contact-info span {
-        display: block;
+    .contact-info div {
         margin: 0.25rem 0;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .job-title {
+        text-align: center;
+    }
+
+    .contact-info {
+        align-items: center;
     }
 }
 
 @media print {
     body {
         padding: 0;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         line-height: 1.3;
     }
 
     @page {
         size: Letter;
-        margin: 0.5in 0.4in 0.4in 0.4in; /* reduced margins */
+        margin: 0.45in 0.4in 0.4in 0.4in;
     }
 
     .container {
         max-width: 7.5in;
         margin: 0 auto;
-        padding-top: 0.1in;
+        padding-top: 0.05in;
+    }
+
+    .header-content {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .header-text {
+        flex: 1;
+        text-align: left;
+    }
+
+    .profile-image {
+        flex-shrink: 0;
+    }
+
+    .profile-image img {
+        width: 100px;
+        height: 120px;
+    }
+
+    .job-title {
+        margin-bottom: 0.25rem;
+        text-align: left;
+    }
+
+    .contact-info {
+        display: grid !important;
+        grid-template-columns: auto auto !important;
+        gap: 0.15rem 1.5rem;
+        text-align: left;
+    }
+
+    h1 {
+        margin-bottom: 0.1rem;
+        font-size: 1.7rem;
+        text-align: left;
+    }
+
+    header {
+        padding-bottom: 0.4rem;
+        margin-bottom: 0.6rem;
     }
 
     /* Reduce spacing for print */
     section {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.45rem;
     }
 
     h2 {
-        margin-bottom: 0.3rem;
-        padding-bottom: 0.1rem;
+        margin-bottom: 0.25rem;
+        padding-bottom: 0.08rem;
     }
 
     .project {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
     }
 
     .project h3 {
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.15rem;
     }
 
     .project ul li, .experience-item ul li {
-        margin-bottom: 0.1rem;
+        margin-bottom: 0.08rem;
     }
 
     .achievements {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.3rem;
     }
 
     .awards, .certifications {
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.18rem;
     }
 
     .skills-grid {
-        gap: 0.2rem;
+        gap: 0.18rem;
     }
 
     .education-item {
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.25rem;
     }
 
     .professional-summary p {
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.25rem;
     }
 }
