@@ -39,23 +39,23 @@
             <div class="skills-grid">
                 <div class="skill-category">
                     <strong>Frontend:</strong>
-                    <span>Next.js, React, TypeScript, TailwindCSS, shadcn/ui, Zustand, TanStack Query, React Hook Form</span>
+                    <span>Next.js 15, React 19, TypeScript, TailwindCSS v4, shadcn/ui, Zod, React Hook Form</span>
                 </div>
                 <div class="skill-category">
                     <strong>Backend:</strong>
-                    <span>Python (FastAPI, SQLAlchemy), Node.js, Celery, Redis</span>
+                    <span>Node.js, Prisma ORM v6+, PostgreSQL, Python (FastAPI), Redis</span>
                 </div>
                 <div class="skill-category">
-                    <strong>Databases:</strong>
-                    <span>PostgreSQL, MySQL, Supabase</span>
+                    <strong>Cloud & DevOps:</strong>
+                    <span>Vercel, Azure, Docker, GitHub Actions, Turborepo, pnpm, Linux</span>
                 </div>
                 <div class="skill-category">
-                    <strong>AI & Automation:</strong>
-                    <span>Google Generative AI (Gemini), LLM Integration, n8n</span>
+                    <strong>AI & Tools:</strong>
+                    <span>Multi-Provider LLM (Cerebras/Groq/OpenAI), Gemini AI, n8n, Claude Code, OpenAI Codex, Figma</span>
                 </div>
                 <div class="skill-category">
-                    <strong>DevOps & Tools:</strong>
-                    <span>Docker, Git, GitHub, Azure, pytest, Vercel, Linux</span>
+                    <strong>Architecture:</strong>
+                    <span>Multi-Tenant SaaS, Offline-First (IndexedDB), API-First, Monorepo, Stripe, SendGrid</span>
                 </div>
             </div>
         </section>
@@ -64,30 +64,42 @@
             <h2>FEATURED PROJECTS & ACHIEVEMENTS</h2>
 
             <div class="project">
-                <h3>SINAG — Government Compliance Assessment Platform<span class="tech">Next.js 15, FastAPI, PostgreSQL, Gemini AI</span></h3>
+                <h3>FleetOS — Multi-Tenant Logistics SaaS<span class="tech">Next.js, TypeScript, Prisma, PostgreSQL</span></h3>
+                <span class="project-status">MVP Delivered (Djibouti, East Africa)</span>
                 <ul>
-                    <li>Full-stack assessment platform digitizing DILG's barangay governance certification for 25 barangays</li>
-                    <li>Built type-safe monorepo with auto-generated TypeScript client from OpenAPI, supporting 6-role validation workflow</li>
-                    <li>Integrated Gemini AI for automated compliance scoring and AI-generated improvement recommendations</li>
-                    <li>Features multi-stage validation workflow, document annotation system, and real-time analytics dashboard</li>
+                    <li>Offline-First sync engine (IndexedDB/Dexie.js) that queues mutations locally and replays on reconnection — keeping drivers operational with zero connectivity</li>
+                    <li>Runtime-configurable expense categories per tenant — each company defines their own without schema changes or redeployments</li>
+                    <li>Multi-language Owner Portal (EN/FR/SO/AR) with isolated read-only access and tenant data isolation at the query level</li>
                 </ul>
             </div>
 
             <div class="project">
-                <h3>DTP GO - QR Code-Based Attendance System<span class="tech">Next.js 15, TypeScript, Supabase, Prisma</span></h3>
+                <h3>PhishAlertPro — Enterprise Cybersecurity Awareness Platform<span class="tech">Next.js, TypeScript, PostgreSQL, Stripe</span></h3>
+                <span class="project-status">Pre-Production (UK-based)</span>
+                <ul>
+                    <li>Security-hardened platform architecture: TOTP-based MFA with backup codes, PII scrubbing on all AI-bound payloads, and Zod schema validation at API boundaries</li>
+                    <li>Universal Seat billing model on Stripe — single subscription scales to any org size with seat-based pricing</li>
+                    <li>Timezone-aware Smart Scheduler that dispatches phishing simulations at locally appropriate times across globally distributed teams</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>SINAG — Government Compliance Assessment Platform<span class="tech">Next.js, FastAPI, PostgreSQL, Gemini AI</span></h3>
+                <span class="project-status">Live — Government (DILG, Sulop)</span>
+                <ul>
+                    <li>Full-stack assessment platform digitizing DILG's barangay governance certification for 25 barangays</li>
+                    <li>Built type-safe monorepo with auto-generated TypeScript client from OpenAPI, supporting a 6-role validation workflow</li>
+                    <li>Integrated Gemini AI for automated compliance scoring and AI-generated improvement recommendations</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>DTP GO — QR Code-Based Attendance System<span class="tech">Next.js, TypeScript, PostgreSQL, Prisma</span></h3>
+                <span class="project-status">University of Mindanao Digos College</span>
                 <ul>
                     <li>QR code-based attendance tracking system serving 1,000+ BSIT and Computer Engineering students</li>
                     <li>Eliminates registration queues with instant QR scanning and one-time student registration process</li>
                     <li>Features real-time analytics dashboard and automated reporting with role-based access control</li>
-                </ul>
-            </div>
-
-            <div class="project">
-                <h3>UMDC Community Extension Management System<span class="tech">TypeScript, React, Node.js</span></h3>
-                <ul>
-                    <li>Developed enterprise web platform for University of Mindanao Digos College's community extension programs</li>
-                    <li>Built secure TypeScript-based architecture for community programs and participant data management</li>
-                    <li>Integrated real-time analytics and reporting system improving program tracking efficiency by 60%</li>
                 </ul>
             </div>
         </section>
@@ -99,7 +111,7 @@
             </div>
             <div class="certifications">
                 <strong>Certifications:</strong>
-                <span>Google UX Design (Coursera), Introduction to Cybersecurity (Cisco Networking Academy), n8n (Coursera)</span>
+                <span>ITS: Java (2025), ITS: HTML & CSS (2025), Google UX Design, n8n, Intro to Cybersecurity</span>
             </div>
         </section>
     </div>
