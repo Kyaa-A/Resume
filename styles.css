@@ -50,7 +50,7 @@ h1 {
 
 .contact-info i {
     font-size: 0.8rem;
-    color: #2c7e7f;
+    color: #2e6b4f;
 }
 
 .contact-info a {
@@ -71,7 +71,7 @@ h2 {
     color: #333333;
     font-size: 1.1rem;
     text-transform: uppercase;
-    border-bottom: 3px solid #2c7e7f;
+    border-bottom: 3px solid #2e6b4f;
     margin-bottom: 0.7rem;
     padding-bottom: 0.2rem;
     font-weight: bold;
@@ -136,8 +136,17 @@ h3 {
 
 .tech {
     font-size: 0.9rem;
-    color: #2c7e7f;
+    color: #2e6b4f;
     font-weight: normal;
+}
+
+.project-status {
+    display: block;
+    font-size: 0.8rem;
+    color: #2e6b4f;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 0.1rem;
 }
 
 .project ul, .experience-item ul {
